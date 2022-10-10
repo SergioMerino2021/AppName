@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0px;
+}
+
+/* Home */
+
+
+.contenedor{
+    width: 100vw;
+    height: 100vh;
+    background-color: #12151A;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.texto{
+    font-size:24px;
+    color: gray;
+    font-family: 'Quicksand', sans-serif;
+
+}
+.titulo{
+    font-size:64px;
+    padding-bottom: 40px;
+    font-family: 'Quicksand', sans-serif;
+}
+.appname{
+    font-family: 'Homemade Apple', cursive;
+    color: white;
+}
+.col-ini1{
+    width: 60%;
+    padding-left: 100px;
+    /*padding-right: 100px;*/
+}
+.col-ini2{
+    width: 40%;
+    
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+@media only screen and (max-width: 800px) {
+    /* For desktop: */
+    .col-ini1 {
+        width: 100%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .col-ini2 {width:0%}
+    .titulo{
+        font-size: 38px;
+    }
+    .texto{
+        font-size: 18px;
+        color:blue
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    /* For desktop: */
+    .texto{
+        
+        color:red
+    }
+}
