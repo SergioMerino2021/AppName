@@ -6,11 +6,6 @@ node {
         git branch: 'main', url: 'https://github.com/SergioMerino2021/AppName.git'
     }
 
-    stage('Construcción') {
-      myGradleContainer.inside("-v ${env.HOME}/.gradle:/home/gradle/.gradle") {
-        sh 'cd complete && /opt/gradle/bin/gradle build'
-      }
-    }
 
     stage('Sonar Scanner') {
       def sonarqubeScannerHome = tool name: 'sonar', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
